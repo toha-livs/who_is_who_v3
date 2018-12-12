@@ -1,0 +1,103 @@
+body {
+     background-color: #000;
+}
+.butt {
+    margin: 30px;
+    background-color: #000000;
+    border-radius: 23px;
+    height: 80px;
+    color: #f9f9f9;
+    border: 1px solid #6b6868;
+    display: table;
+}
+#answer {
+
+}
+#buttonss {
+    background-color: #6b6b6b;
+    border-radius: 5px;
+    height: 80px;
+    font-size: 20px;
+    color: yellow;
+    margin: 30px;
+    margin-left: 20%;
+}
+#header {
+    height: 100px;
+    background-color: #000000;
+}
+#header div img {
+    height: 100px;
+}
+#img_div {
+    background-color: #131313;
+    height: 380px;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+}
+#position_user {
+    background-color: #000;
+    height: 40px;
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+
+
+#modal_form {
+	width: 300px;
+	height: 300px; /* Ð aÐ·Ð¼ÐµÑ€Ñ‹ Ð´oÐ»Ð¶Ð½Ñ‹ Ð±Ñ‹Ñ‚ÑŒ Ñ„Ð¸ÐºÑÐ¸Ñ€oÐ²aÐ½Ñ‹ */
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* Ñ‡Ñ‚oÐ±Ñ‹ oÐºÐ½o Ð±Ñ‹Ð»o Ð² Ð²Ð¸Ð´Ð¸Ð¼oÐ¹ Ð·oÐ½Ðµ Ð² Ð»ÑŽÐ±oÐ¼ Ð¼ÐµÑÑ‚Ðµ */
+	top: 45%; /* oÑ‚ÑÑ‚ÑƒÐ¿aÐµÐ¼ ÑÐ²ÐµÑ€Ñ…Ñƒ 45%, oÑÑ‚aÐ»ÑŒÐ½Ñ‹Ðµ 5% Ð¿oÐ´Ð²Ð¸Ð½ÐµÑ‚ ÑÐºÑ€Ð¸Ð¿Ñ‚ */
+	left: 50%; /* Ð¿oÐ»oÐ²Ð¸Ð½a ÑÐºÑ€aÐ½a ÑÐ»ÐµÐ²a */
+	margin-top: -150px;
+	margin-left: -150px; /* Ñ‚ÑƒÑ‚ Ð²ÑÑ Ð¼aÐ³Ð¸Ñ Ñ†ÐµÐ½Ñ‚Ñ€oÐ²ÐºÐ¸ css, oÑ‚ÑÑ‚ÑƒÐ¿aÐµÐ¼ Ð²Ð»ÐµÐ²o Ð¸ Ð²Ð²ÐµÑ€Ñ… Ð¼Ð¸Ð½ÑƒÑ Ð¿oÐ»oÐ²Ð¸Ð½Ñƒ ÑˆÐ¸Ñ€Ð¸Ð½Ñ‹ Ð¸ Ð²Ñ‹ÑoÑ‚Ñ‹ ÑooÑ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÐµÐ½Ð½o =) */
+	display: none; /* Ð² oÐ±Ñ‹Ñ‡Ð½oÐ¼ ÑoÑÑ‚oÑÐ½Ð¸Ð¸ oÐºÐ½a Ð½Ðµ Ð´oÐ»Ð¶Ð½o Ð±Ñ‹Ñ‚ÑŒ */
+	opacity: 0; /* Ð¿oÐ»Ð½oÑÑ‚ÑŒÑŽ Ð¿Ñ€oÐ·Ñ€aÑ‡Ð½o Ð´Ð»Ñ aÐ½Ð¸Ð¼Ð¸Ñ€oÐ²aÐ½Ð¸Ñ */
+	z-index: 5; /* oÐºÐ½o Ð´oÐ»Ð¶Ð½o Ð±Ñ‹Ñ‚ÑŒ Ð½aÐ¸Ð±oÐ»ÐµÐµ Ð±oÐ»ÑŒÑˆÐµÐ¼ ÑÐ»oÐµ */
+	padding: 20px 10px;
+}
+/* ÐšÐ½oÐ¿Ðºa Ð·aÐºÑ€Ñ‹Ñ‚ÑŒ Ð´Ð»Ñ Ñ‚ÐµÑ… ÐºÑ‚o Ð² Ñ‚aÐ½ÐºÐµ) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* ÐŸoÐ´Ð»oÐ¶Ðºa */
+#overlay {
+	z-index:3; /* Ð¿oÐ´Ð»oÐ¶Ðºa Ð´oÐ»Ð¶Ð½a Ð±Ñ‹Ñ‚ÑŒ Ð²Ñ‹ÑˆÐµ ÑÐ»oÐµÐ² ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚oÐ² ÑaÐ¹Ñ‚a, Ð½o Ð½Ð¸Ð¶Ðµ ÑÐ»oÑ Ð¼oÐ´aÐ»ÑŒÐ½oÐ³o oÐºÐ½a */
+	position:fixed; /* Ð²ÑÐµÐ³Ð´a Ð¿ÐµÑ€ÐµÐºÑ€Ñ‹Ð²aÐµÑ‚ Ð²ÐµÑÑŒ ÑaÐ¹Ñ‚ */
+	background-color:#000; /* Ñ‡ÐµÑ€Ð½aÑ */
+	opacity:0.8; /* Ð½o Ð½ÐµÐ¼Ð½oÐ³o Ð¿Ñ€oÐ·Ñ€aÑ‡Ð½a */
+	-moz-opacity:0.8; /* Ñ„Ð¸ÐºÑ Ð¿Ñ€Ð¾Ð·Ñ€Ð°Ñ‡Ð½Ð¾ÑÑ‚Ð¸ Ð´Ð»Ñ ÑÑ‚Ð°Ñ€Ñ‹Ñ… Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð² */
+	filter:alpha(opacity=80);
+	width:100%;
+	height:100%; /* Ñ€aÐ·Ð¼ÐµÑ€oÐ¼ Ð²o Ð²ÐµÑÑŒ ÑÐºÑ€aÐ½ */
+	top:0; /* ÑÐ²ÐµÑ€Ñ…Ñƒ Ð¸ ÑÐ»ÐµÐ²a 0, oÐ±ÑÐ·aÑ‚ÐµÐ»ÑŒÐ½Ñ‹Ðµ ÑÐ²oÐ¹ÑÑ‚Ð²a! */
+	left:0;
+	cursor:pointer;
+	display:none; /* Ð² oÐ±Ñ‹Ñ‡Ð½oÐ¼ ÑoÑÑ‚oÑÐ½Ð¸Ð¸ ÐµÑ‘ Ð½ÐµÑ‚) */
+}
+#start {
+    margin-top:80px;
+}
+.h_3 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.h_1 {
+    display: table-cell;
+    vertical-align: middle;
+}
+.h_2 {
+    display: table-cell;
+    vertical-align: middle;
+}

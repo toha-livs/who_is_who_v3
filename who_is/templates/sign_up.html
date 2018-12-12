@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>-->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	{%load staticfiles%}
+    <link rel="stylesheet" href="{% static 'css/sign_up.css' %}"/>
+</head>
+<body>
+<div class="col-xs-12">
+	<div class="col-xs-6 col-xs-offset-3 basic">
+		    <h3 class="form-signin-heading">Пожалуйста зарегистрируйтесь</h3>
+			  <hr class="colorgraph"><br>
+
+			<div class="col-xs-12" id="name_info">
+					<div class="col-xs-8 col-xs-offset-2">
+						<input type="text"  class="form-control" id="first_name_u" name="FirstName" placeholder="Имя" required=""/>
+					</div>
+					<div class="col-xs-8 col-xs-offset-2">
+						<input type="text" class="form-control" id="last_name_u" name="LastName" placeholder="Фамилия" required=""/>
+					</div>
+			</div>
+
+		    <div class="col-xs-12" style="display: None;" id="login_div">
+			  <div class="col-xs-8 col-xs-offset-2">
+				  <input type="text" style="margin-bottom:10px;" id="login_inp" class="form-control" name="Login" placeholder="Логин" required="" autofocus="" />
+			  		<div id="info_login" class="text-center">Используйте логин учетной записи Lamoda </div>
+			  </div>
+			</div>
+			<div class="col-xs-12" style="display: None;" id="password_div">
+				<div class="col-xs-8 col-xs-offset-2">
+					<input type="password" id="pass" class="form-control" name="Password" placeholder="Пароль" required="" autofocus="" />
+				</div>
+
+				<div class="col-xs-8 col-xs-offset-2">
+					<input type="password" id="repPass" class="form-control" name="Подтвердить пароль" placeholder="Подтверждени пароля" required=""/>
+				</div>
+			</div>
+			<div class="col-xs-12" style="display: None;" id="image_div">
+				<div class="col-xs-8 col-xs-offset-2">
+					<input type="text" class="form-control" id="Image" placeholder="Фото" required=""/>
+					<div id="imag_info" class="col-xs-12" style="display: None;">Мы поддерживаем ссылки фото с Facebook и Вконтакте </div>
+				</div>
+				<div class="col-xs-2" style="padding-left: 0; display: None;"><span id="chek_info" class="glyphicon glyphicon-question-sign"></span></div>
+				<div id="img_img" style="display: none;"><img src="{% static 'image/how_to_img_fb.png' %}" class="img-thumbnail"></div>
+			</div>
+			<div class="col-xs-12" style="display: None;" id="position_div">
+				<div class="col-xs-12">
+					<div class="col-xs-3 icon" style="display: None;" id="call_f"><img src="https://img.icons8.com/windows/300/c53acc/technical-support.png"></div>
+    				<div class="col-xs-3 icon" style="display: None;" id="call_m"><img src="https://img.icons8.com/windows/300/1681e2/online-support.png"></div>
+    				<div class="col-xs-3 icon" style="display: None;" id="manager"><img src="https://img.icons8.com/windows/300/27ae60/admin-settings-male.png"></div>
+					<input id="position_inp" type="text" value="0" style="display: None;"/>
+					<div style="display: None;" id="position_info_div" class="col-xs-6 col-xs-offset-3">
+						<i class="col-xs-12 text-center" id="position_info"></i>
+					</div>
+					</select>
+				</div>
+			</div>
+			<div class="col-xs-12" id="but_ah_ba_0">
+				<!--<button class="btn btn-lg btn-primary btn-block" id="back_but"  name="button" type="Button">Назад</button>-->
+				<button class="btn btn-lg btn-primary btn-block" id="next_but"  name="button" type="Button">Далее</button>
+			</div>
+			<div class="col-xs-12" id="but_ah_ba_1" style="display: none;">
+				<div id="back_div1" style="display: none;" class="col-xs-6">
+					<button class="btn btn-lg btn-primary btn-block" id="back_but_1"  name="button" type="Button">Назад</button>
+				</div>
+				<div id="next_div1" class="col-xs-6">
+					<button class="btn btn-lg btn-primary btn-block" id="next_but_1"  name="button" type="Button">Далее</button>
+				</div>
+			</div>
+			<div class="col-xs-12" id="but_ah_ba_2"  style="display: none;">
+				<div id="back_div2" class="col-xs-6">
+					<button class="btn btn-lg btn-primary btn-block" id="back_but_2"  name="button" type="Button">Назад</button>
+				</div>
+				<div id="next_div2" class="col-xs-6">
+					<button class="btn btn-lg btn-primary btn-block" id="next_but_2"  name="button" type="Button">Далее</button>
+				</div>
+			</div>
+			<div class="col-xs-12" id="but_ah_ba_3"  style="display: none;">
+				<div id="back_div3" class="col-xs-6">
+					<button class="btn btn-lg btn-primary btn-block" id="back_but_3"  name="button" type="Button">Назад</button>
+				</div>
+				<div id="next_div3" class="col-xs-6">
+					<button class="btn btn-lg btn-primary btn-block" id="next_but_3"  name="button" type="Button">Далее</button>
+				</div>
+			</div>
+		<div class="col-xs-12" style="display: None;" id="but_ah_ba_4" >
+			<div id="back_div4" class="col-xs-6">
+				<button class="btn btn-lg btn-primary btn-block" id="back_but_4"  name="button" type="Button">Назад</button>
+			</div>
+			<div id="next_div4" class="col-xs-6">
+				<button class="btn btn-lg btn-primary btn-block" id="sub_but"  name="Submit" type="Submit">Зарегистрироваться</button>
+			</div>
+		</div>
+		<div class="col-xs-4 col-xs-offset-4" id="sign_in">
+			<a href="/">У вас уже есть аккаунт?</a>
+			<input id="csrf__" type="hidden" style="display: none;" value="{{ csrf_token }}"/>
+		</div>
+	</div>
+</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	  <div style="margin-top: 60px;" class="col-xs-3 col-xs-offset-2"><button style="background-color: #e758e8;color: #7b158c;border: 1px solid #fbb4ff;" id="woman_b" class="btn-lg">Девушка</button></div>
+	  <div style="margin-top: 60px;" class="col-xs-3 col-xs-offset-2"><button style="background-color: #3e7ccc;color: #135773;border: 1px solid #7ac7ff;" id="man_b" class="btn-lg">Мужчина</button></div>
+
+  </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
+
+<script src="{% static 'js/sign_up.js' %}"></script>
+</body>
+</html>

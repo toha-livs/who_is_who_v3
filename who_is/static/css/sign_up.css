@@ -1,0 +1,163 @@
+body {
+    background-color: #e0e0e0;
+}
+
+.basic {
+    margin-top: 80px;
+    background-color: #eee;
+    min-height: 400px;
+    padding: 0;
+}
+
+.form-signin {
+  width: 75%;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 5px;
+  }
+
+.form-signin-heading {
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+}
+
+input[type="text"] {
+  margin-bottom: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.colorgraph {
+  height: 7px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 0;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+#sign_in {
+    position: absolute;
+    margin-top: 10px;
+    bottom: 10px;
+}
+
+#but_ah_ba_0 {
+   position: absolute;
+   bottom: 50px;
+}
+
+#but_ah_ba_1 {
+   position: absolute;
+   bottom: 50px;
+}
+#but_ah_ba_2 {
+   position: absolute;
+   bottom: 50px;
+}
+#but_ah_ba_3 {
+   position: absolute;
+   bottom: 50px;
+}
+#but_ah_ba_4 {
+   position: absolute;
+   bottom: 50px;
+}
+
+#info_login {
+    display: none;
+    color: #62c2e4;
+    border-bottom: 1px solid #62c2e4;
+}
+
+#image_div img {
+    height: 280px;
+}
+#imag_info {
+    font-size: 12px;
+    border-bottom: 1px solid #62c2e4;
+    color: #62c2e4;
+}
+#chek_info {
+    font-size: 32px;
+    color: #eee;
+    padding-top: 4px;
+}
+# img_img {
+    margin-top: 90px;
+}
+.icon {
+    margin: 23px;
+    height: 140px;
+    border-bottom: 1px solid #777777;
+    box-shadow: 0px 1px 3px 0px #696868;
+    padding-top: 0;
+    padding-left: 1.7%;
+    border-radius: 5px;
+    border-radius: 40px;
+}
+.icon img {
+    height: 133px;
+    width: 133px;
+}
+#position_info {
+    color: #eee;
+    font-size: 25px;
+    text-align: center;
+    font-style: oblique;
+}
+
+/*   modal   */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    height: 200px;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

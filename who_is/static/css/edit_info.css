@@ -1,0 +1,37 @@
+body {
+    background-color: #000;
+}
+#all {
+    margin-top: 200px;
+}
+.but_edit {
+    border: 1px solid #656565;
+    color: #d4d4d4;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 7px;
+}
+.inp__ {
+    height: 50px;
+    background-color: #656565;
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid #353535;
+    display: none;
+}
+#prog {
+    height: 50px;
+    background-color: #a9a9a9;
+    display: none;
+    border-radius: 25px;
+}
+#progres {
+    width: 10px;
+    background-color: #9d4eb5;
+    font-size: 35px;
+    padding-top: 15px;
+    color: black;
+}
